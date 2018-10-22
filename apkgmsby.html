@@ -7,27 +7,24 @@
 	<title>APKGM</title>
 	<link rel="stylesheet" type="text/css" href="https://cdn.staticaly.com/gh/samhidayat/html_kerjaan/ee3e1c70/cssapkgmujicoba.css">
 	<style type='text/css'>
-@media screen and (max-width: 460px) {
+@media (min-width: 600px){ 
+/*SELAMA LEBAR LAYAR TIDAK LEBIH KECIL DARI 600PX, MAKA BARIS CODING DIBAWAH INI YANG AKAN DIEKSEKUSI*/
  
-	nav.menu ul a {
-		padding:15px;
-		font-size: 14px;
-	}
+    /*baris css yang tadi*/
+    #container{position:relative; margin:0px 20px;}
  
-	.sidebar {
-		display:none
-	}
-	.post-info {
-		display:none;
-	}
+    #header{position:relative; background:#0cf; padding:10px;}
+    #header .judul{font-size:30px; font-weight:bold; float:left;}
+    #header .menu{float:right; background:#333; color:#fff; padding:10px;}
+    #header:after{display:block; content:""; clear:both;}
  
-	.conteudo {
-		margin:25px auto;
-	}
+    #content{min-height:500px; position:relative;}
+    #content .isi{width:70%; height:500px; position:relative; background:#def; float:left;}
+    #content .sidebar{width:30%; height:500px; position:relative; background:#079; float:right;}
+    #content:after{display:block; content:""; clear:both;}
  
-	.conteudo img {
-		margin:-5% 0 25px -5%;
-	}			
+    #footer{background:#000; color:#ccc; padding:10px; font-style:italic;}
+ 
 }
 </style>
 </head>
